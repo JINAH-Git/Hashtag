@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>Hashtags</title>
+	</head>
+	<body>
+		<div class="main" style="margin:0px; border:1px solid black; width:1900px; min-height:1800px">
+			<div class="sub1" style="background:skyblue; border:1px solid red; width:1900px; min-height:900px">
+			
+				<button> ↓ </button>
+			</div>
+			<div class="sub2" style="background:mistyrose; border:1px solid green; width:1900px; min-height:900px">
+				
+			</div>
+		</div>
+	</body>
+</html>

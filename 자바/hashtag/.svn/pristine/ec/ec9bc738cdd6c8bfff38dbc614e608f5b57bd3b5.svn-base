@@ -1,0 +1,16 @@
+//긍정부정중립단어사전 데이터의 자료를 담기위한 VO(Value Object)클래스
+package hashtag.vo;
+
+public class EmotiondictVO 
+{
+	String edadjective;  //형용사
+	String edsort;       //긍정부정중립구분
+	
+	public String getEdadjective() 					{ return edadjective;             }
+	public String getEdsort()     					{ return edsort;      		 	  }
+	
+	public void setEdadjective(String edadjective)  { this.edadjective = edadjective; }
+	public void setEdsort(String edsort) 		    { this.edsort = edsort;           }
+	
+	
+}

@@ -1,0 +1,475 @@
+@charset "EUC-KR";
+
+.wrap_body
+		{
+			width:100%;
+			height:3000px;
+			background-color:#EDEDED;
+			position:relative;
+			border-top: 1.5px solid #E4E4E7;
+		}
+		.bodybar1
+		{
+			width:330px;
+			height:1300px;
+			background-color:#FFFFFF;
+			position:absolute;
+			left: 160px;
+		}
+		.bar1
+		{
+			width:280px;
+			height:200px;
+			top:50px;
+			margin-left:20px;
+			position: relative;
+			margin-bottom: 85px;
+		}
+		.hstitle
+		{
+			width:120px;
+			height:30px;	
+			background-color:#F2F4FD;
+			border-radius:80px;
+			top: 20px;
+			right:150px;
+		    position:absolute;
+		   	padding: 15px 10px;
+		   	vertical-align: middle;
+		   	bottom: 35px;
+		   	color: #5863CB;
+		   	font-size: 20px;
+		   	text-align: center;
+		}
+		.right
+		{
+			position: absolute;
+			left:130px;
+			top:35px;
+		}
+		.hstitle2
+		{
+			width:120px;
+			height:30px;
+			background-color:#756ADB;
+			border-radius:80px;
+			top: 20px;
+		    position:absolute;
+		    left:160px;
+		   	padding: 15px 10px;
+		   	vertical-align: middle;
+		   	bottom: 35px;
+		   	color: white;
+		   	font-size: 20px;
+		   	text-align: center;
+		}
+		.hspost
+		{
+			width:150px;
+			height:50px;
+			position:absolute;
+			top: 126px;
+			right:120px;
+			padding: 10px 10px;
+			text-align: center;
+			font-size:18px;
+		}
+		.hspostcount
+		{
+			width:150px;
+			height:50px;
+			position:absolute;
+			top: 132px;
+			left:190px;
+			font-size:20px;
+		}
+		.bar2
+		{
+			width:280px;
+			height:350px;
+			position: relative;
+			margin-left:20px;
+			margin-bottom: 35px;
+		}
+		.phs
+		{
+			width:250px;
+			height:250px;
+			position: absolute;
+			left:60px;
+			font-size:20px;
+		}
+		/* 실시간 인기 해시태그 리스트들 */
+		.phs_list
+		{
+			width:280px;
+			height:330px;
+			position: absolute;
+			top:35px;
+			border-radius: 8px;
+			background-color:#FFFFFF;		
+		}
+		/*실시간 인기 해시태그 1번*/
+		.phs_list1
+		{
+			background-color:#F2F4FD;
+			border-radius:50px;
+			position:relative;
+		   	padding: 10px 18px;
+		   	vertical-align: middle;
+		   	color: #5863CB;
+		   	top: 20px;
+		   	left:30px;
+		   	font-size:18px;
+		}
+		.phs_name1
+		{
+			width:200px;
+			height:30px;
+			background-color:#F2F4FD;
+			border-radius:100px;
+			position:relative;
+			top: 20px;
+		    left:40px;
+		   	padding: 15px 55px;
+		   	vertical-align: middle;
+		   	color: #5863CB;
+		   	text-align: center;
+		   	font-size:18px;
+		}
+		.phs_list2
+		{
+			background-color:#F2F4FD;
+			border-radius:50px;
+			position:relative;
+		   	padding: 10px 18px;
+		   	vertical-align: middle;
+		   	color: #5863CB;
+		   	top: 55px;
+		   	left:30px;
+   			font-size:18px;
+		}
+		.phs_name2
+		{
+			width:200px;
+			height:30px;
+			background-color:#F2F4FD;
+			border-radius:100px;
+			position:relative;
+			top: 55px;
+		    left:40px;
+		   	padding: 15px 45px;
+		   	vertical-align: middle;
+		   	color: #5863CB;
+		   	text-align: center;
+		   	font-size:18px;
+		}
+		.phs_list3
+		{
+			background-color:#F2F4FD;
+			border-radius:80px;
+			position:relative;
+		   	padding: 10px 18px;
+		   	vertical-align: middle;
+		   	color: #5863CB;
+		   	top: 90px;
+		   	left:30px;
+		   	font-size:18px;
+		}
+		.phs_name3
+		{
+			width:200px;
+			height:30px;
+			background-color:#F2F4FD;
+			border-radius:100px;
+			position:relative;
+			top: 90px;
+		    left:40px;
+		   	padding: 15px 45px;
+		   	vertical-align: middle;
+		   	color: #5863CB;
+		   	text-align: center;
+		   	font-size:18px;
+		}
+		.phs_list4
+		{
+			background-color:#F2F4FD;
+			border-radius:80px;
+			position:relative;
+		   	padding: 10px 18px;
+		   	vertical-align: middle;
+		   	color: #5863CB;
+		   	top: 125px;
+		   	left:30px;
+		   	font-size:18px;
+		}
+		.phs_name4
+		{
+			width:200px;
+			height:30px;
+			background-color:#F2F4FD;
+			border-radius:100px;
+			position:relative;
+			top: 125px;
+		    left:40px;
+		   	padding: 15px 62px;
+		   	vertical-align: middle;
+		   	color: #5863CB;
+		   	font-size:18px;
+		}
+		.phs_list5
+		{
+			background-color:#F2F4FD;
+			border-radius:80px;
+			position:relative;
+		   	padding: 10px 18px;
+		   	vertical-align: middle;
+		   	color: #5863CB;
+		   	top: 160px;
+		   	left:30px;
+		   	font-size:18px;
+		}
+		.phs_name5
+		{
+			width:200px;
+			height:30px;
+			background-color:#F2F4FD;
+			border-radius:100px;
+			position:relative;
+			top: 160px;
+		    left:40px;
+		   	padding: 15px 62px;
+		   	vertical-align: middle;
+		   	color: #5863CB;
+		   	font-size:18px;
+		}
+		.bar3
+		{
+			width:280px;
+			height:350px;
+			position: relative;
+			margin-left:20px;
+		}
+		.cafename
+		{
+			width:250px;
+			height:250px;
+			position: absolute;
+			left:80px;
+			font-size: 20px;
+		}
+		.cafename_list
+		{
+			width:300px;
+			height:330px;
+			border-radius: 8px;
+			position: absolute;
+			top:38px;
+		}
+		/*다른 지역 카페 이름들 */
+		.cafe1
+		{
+			background-color:#F2F4FD;
+			border-radius:100px;
+			position:relative;
+		    left:23px;
+		    top:20px;
+		   	padding: 15px 80px;
+		   	vertical-align: middle;
+		   	color: #5863CB;
+		   	font-size:18px;
+		}
+		.cafe2
+		{
+			background-color:#F2F4FD;
+			border-radius:100px;
+			position:relative;
+			top: 60px;
+		    left:23px;
+		   	padding: 15px 80px;
+		   	vertical-align: middle;
+		   	color: #5863CB;
+		   	font-size:18px;
+		}
+		.cafe3
+		{
+			background-color:#F2F4FD;
+			border-radius:100px;
+			position:relative;
+			top: 100px;
+		    left:23px;
+		   	padding: 15px 80px;
+		   	vertical-align: middle;
+		   	color: #5863CB;
+		   	font-size:18px;
+		}
+		.tag
+		{
+			width:1050px;
+			height:2200px;
+		    position:absolute;
+		    left:600px;
+		    top:0px;
+		}
+		.tagname
+		{
+			position:absolute;
+			top:25px;
+			left:15px;
+		}
+		.postname
+		{
+			position:absolute;
+			top:35px;
+			left:20px;
+			font-size:20px;
+		}
+		/*포스트 1번*/
+		.post_1
+		{
+			width:1000px;
+			height:150px;
+		}
+		.post
+		{
+			width:1000px;
+			height:304px;
+			position:absolute;
+			left:15px;
+			top:75px;
+			background-color:#FFFFFF;
+			border-radius: 8px;
+		}
+		.blogname1
+		{
+			position:relative;
+			left:430px;
+			top:30px;
+			text-align: center;
+			vertical-align:middle;
+			font-size: 18px;
+		}
+		.blognote1
+		{
+			width:800px;
+			height:80px;
+			position:absolute;
+			top:70px;
+			right:90px;
+		}
+		.blogaddress1
+		{
+			position:absolute;
+			top:125px;
+			right:518px;
+		}
+		.blogcount1
+		{
+			position:absolute;
+			top:125px;
+			right:120px;
+		}
+		/* 인기 포스트 두 번쩨 */
+		.post_2
+		{
+			width:1000px;
+			height:150px;
+		}
+		.blogname2
+		{
+			position:relative;
+			left:430px;
+			top:30px;
+			text-align: center;
+			vertical-align:middle;
+			font-size: 18px;
+		}
+		.blognote2
+		{
+			width:800px;
+			height:80px;
+			position:absolute;
+			top:220px;
+			right:90px;
+		}
+		.blogaddress2
+		{
+			position:absolute;
+			top:275px;
+			right:518px;
+		}
+		.blogcount2
+		{
+			position:absolute;
+			top:275px;
+			right:120px;
+		}
+		.tag_name1, .tag_name2, .tag_name3
+		{
+			width:120px;
+			height:30px;
+			background-color:#F2F4FD;
+			border-radius:800px;
+		    position:relative;
+		   	padding: 15px 23px;
+		   	vertical-align: middle;
+		   	display:inline-table;
+		   	text-align: center;
+		}
+		.graph_body
+		{
+			width:1000px;
+			height:400px;
+		    position:absolute;
+		    left:15px;
+		    top:460px;
+		}
+		.graphname
+		{
+			position:absolute;
+			top:420px;
+			left:20px;
+			font-size:20px;
+		}
+		.hstreename
+		{
+			position:absolute;
+			top:900px;
+			left:20px;
+			font-size:20px;
+		}
+		.hstree_tree
+		{
+			width:900px;
+			height:500px;
+		    position:absolute;
+		    left:15px;
+		    top:940px;
+		}
+		.ponwordname
+		{
+			position:absolute;
+			top:1480px;
+			left:15px;
+			font-size:20px;
+		}
+		.ponword_body
+		{
+			width:900px;
+			height:450px;
+		    position:absolute;
+		    left:15px;
+		    top:1525px;
+		}
+		.table1
+		{
+			position:absolute;
+			top:45px;
+			left:22px;
+		}
+		.table2
+		{
+			position:absolute;
+			top:45px;
+			left:500px;
+		}

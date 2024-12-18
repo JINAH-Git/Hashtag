@@ -1,0 +1,183 @@
+//크롤링한 데이터 정보를 모델(Model)로 부터 처리하기 위한 DTO클래스(Data Transfer Object)
+package hashtag.dto;
+
+import java.util.ArrayList;
+
+import hashtag.dao.*;
+import hashtag.vo.*;
+
+public class DataDTO extends DBManager
+{	
+	//조건에 맞는 데이터의 개수 구하기 - R
+	public int GetTotalData(String refine,String region,String searchVal,String keyword)
+	{	
+		int totalData = 0;
+		
+		this.DBOpen();
+		String sql = "";
+		if(refine.equals("원천"))
+		{			
+			sql  = "select count(*) as total from data ";
+			sql += "where 1 = 1 ";
+			if(!region.equals("전체"))
+			{
+				if(region.equals("전주")) region = "#전주카페";
+				if(region.equals("완주")) region = "#완주카페";
+				if(region.equals("군산")) region = "#군산카페";
+				if(region.equals("익산")) region = "#익산카페";
+				
+				sql += "and region='" + region + "' ";			
+			}
+			if(searchVal.equals("전체"))
+			{
+				sql += "and (title like '%" + keyword + "%' or note like '%" + keyword + "%' or hashtag like '%" + keyword + "%') ";			
+			}else
+			{
+				if(searchVal.equals("제목")) searchVal = "title";
+				if(searchVal.equals("내용")) searchVal = "note";
+				if(searchVal.equals("해시태그")) searchVal = "hashtag";
+				
+				sql += "and " + searchVal + " like '%" + keyword +"%' ";
+			}
+			this.RunSelect(sql);
+			System.out.println(sql);
+		}
+		
+		if(refine.equals("정제"))
+		{	
+			sql  = "select count(*) as total from crawlingdata ";
+			sql += "where 1 = 1 ";
+			if(!region.equals("전체"))
+			{
+				if(region.equals("전주")) region = "#전주카페";
+				if(region.equals("완주")) region = "#완주카페";
+				if(region.equals("군산")) region = "#군산카페";
+				if(region.equals("익산")) region = "#익산카페";
+				
+				sql += "and cdregion='" + region + "' ";			
+			}
+			if(searchVal.equals("전체"))
+			{
+				sql += "and (cdtitle like '%" + keyword + "%' or cdnote like '%" + keyword + "%' or cdhashtag like '%" + keyword + "%') ";			
+			}else
+			{
+				if(searchVal.equals("제목")) searchVal = "cdtitle";
+				if(searchVal.equals("내용")) searchVal = "cdnote";
+				if(searchVal.equals("해시태그")) searchVal = "cdhashtag";
+				
+				sql += "and " + searchVal + " like '%" + keyword +"%' ";
+			}
+			this.RunSelect(sql);
+			System.out.println(sql);
+		}
+		if(this.Next() == true)
+		{
+			totalData = Integer.parseInt(this.getValue("total"));
+		}
+		this.DBClose();
+		
+		return totalData;
+	}
+
+	//조건에 맞게 리스트 출력하기 - R
+	public ArrayList<DataVO> List(String region,String searchVal,String keyword,int pageNo)
+	{
+		if(searchVal.equals("제목")) searchVal = "title";
+		if(searchVal.equals("내용")) searchVal = "note";
+		if(searchVal.equals("해시태그")) searchVal = "hashtag";
+		
+		this.DBOpen();
+		DataVO vo = null;
+		ArrayList<DataVO> list = new ArrayList<DataVO>();
+		int startNo = (pageNo - 1) * 10;
+		String sql = "";
+		sql  = "select * from data ";
+		sql += "where 1 = 1 ";
+		if(!region.equals("전체"))
+		{
+			if(region.equals("전주")) region = "#전주카페";
+			if(region.equals("완주")) region = "#완주카페";
+			if(region.equals("군산")) region = "#군산카페";
+			if(region.equals("익산")) region = "#익산카페";
+			
+			sql += "and region='" + region + "' ";			
+		}
+		if(searchVal.equals("전체"))
+		{
+			sql += "and (title like '%" + keyword + "%' or note like '%" + keyword + "%' or hashtag like '%" + keyword + "%') ";			
+		}else
+		{
+			sql += "and " + searchVal + " like '%" + keyword +"%' ";
+		}
+		sql += "limit " + startNo + ",10 ";
+		this.RunSelect(sql);
+		System.out.println(sql);
+		while(this.Next() == true)
+		{
+			vo = new DataVO();
+			vo.setDno(Integer.parseInt(this.getValue("dno")));
+			vo.setBlogaddress(this.getValue("blogaddress"));
+			vo.setTitle(this.getValue("title"));
+			vo.setWdate(this.getValue("wdate"));
+			vo.setNote(this.getValue("note"));
+			vo.setHashtag(this.getValue("hashtag"));
+			vo.setHeart(this.getValue("heart"));
+			vo.setRegion(this.getValue("region"));
+			list.add(vo);
+		}
+		this.DBClose();
+		
+		return list;	
+	}
+	
+	//조건에 맞게 리스트 출력하기 - R
+	public ArrayList<CrawlingdataVO> List2(String region,String searchVal,String keyword,int pageNo)
+	{
+		if(searchVal.equals("제목")) searchVal = "cdtitle";
+		if(searchVal.equals("내용")) searchVal = "cdnote";
+		if(searchVal.equals("해시태그")) searchVal = "cdhashtag";
+		
+		this.DBOpen();
+		CrawlingdataVO vo = null;
+		ArrayList<CrawlingdataVO> list = new ArrayList<CrawlingdataVO>();
+		int startNo = (pageNo - 1) * 10;
+		String sql = "";
+		sql  = "select * from crawlingdata ";
+		sql += "where 1 = 1 ";
+		if(!region.equals("전체"))
+		{
+			if(region.equals("전주")) region = "#전주카페";
+			if(region.equals("완주")) region = "#완주카페";
+			if(region.equals("군산")) region = "#군산카페";
+			if(region.equals("익산")) region = "#익산카페";
+			
+			sql += "and region='" + region + "' ";			
+		}
+		if(searchVal.equals("전체"))
+		{
+			sql += "and (cdtitle like '%" + keyword + "%' or cdnote like '%" + keyword + "%' or cdhashtag like '%" + keyword + "%') ";			
+		}else
+		{
+			sql += "and " + searchVal + " like '%" + keyword +"%' ";
+		}
+		sql += "limit " + startNo + ",10 ";
+		this.RunSelect(sql);
+		System.out.println(sql);
+		while(this.Next() == true)
+		{
+			vo = new CrawlingdataVO();
+			vo.setCdno(Integer.parseInt(this.getValue("cdno")));
+			vo.setCdblogaddress(this.getValue("cdblogaddress"));
+			vo.setCdtitle(this.getValue("cdtitle"));
+			vo.setCdwdate(this.getValue("cdwdate"));
+			vo.setCdnote(this.getValue("cdnote"));
+			vo.setCdhashtag(this.getValue("cdhashtag"));
+			vo.setCdheart(this.getValue("cdheart"));
+			vo.setCdregion(this.getValue("cdregion"));
+			list.add(vo);
+		}
+		this.DBClose();
+		
+		return list;	
+	}
+}
