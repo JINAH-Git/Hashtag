@@ -42,10 +42,10 @@ SNS API를 통해 데이터를 수집 및 해시태그 분석을 주기적으로
 ---
 
 🛠️ 기술 스택
-**Frontend**: HTML, CSS, JavaScript (React.js)
-**Backend**: Python (Flask)
-**Data Analysis**: Python (Pandas, NumPy, Matplotlib)
-**Database: MySQL**
-**AP**I: SNS API (Twitter API, Instagram API)
-T**ool**: VS Code, Postman, Photoshop, Figma
+- **Frontend**: HTML, CSS, JavaScript (React.js)
+- **Backend**: Python (Flask)
+- **Data Analysis**: Python (Pandas, NumPy, Matplotlib)
+- **Database: MySQL**
+- **API**: SNS API (Twitter API, Instagram API)
+- **Tool**: VS Code, Postman, Photoshop, Figma
 
