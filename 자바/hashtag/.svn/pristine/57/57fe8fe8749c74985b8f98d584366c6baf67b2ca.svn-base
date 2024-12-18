@@ -1,0 +1,19 @@
+//블로그 키워드 매핑 데이터의 자료를 담기위한 VO(Value Object)클래스
+package hashtag.vo;
+
+public class Blogmapping 
+{
+	String bmadjective;  //형용사
+	String blogaddress;  //블로그주소
+	String bmcount;      //빈도수
+	
+	public String getBmadjective() 					{ return bmadjective;             }
+	public String getBlogaddress() 					{ return blogaddress;             }
+	public String getBmcount()     					{ return bmcount;                 } 
+	
+	public void setBmadjective(String bmadjective)  { this.bmadjective = bmadjective; }
+	public void setBlogaddress(String blogaddress)  { this.blogaddress = blogaddress; }
+	public void setBmcount(String bmcount) 		    { this.bmcount = bmcount;         }
+	
+	
+}

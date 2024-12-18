@@ -1,0 +1,98 @@
+am4core.useTheme(am4themes_animated);
+
+var chart = am4core.create("hstree_tree", am4plugins_forceDirected.ForceDirectedTree);
+chart.legend = new am4charts.Legend();
+
+var networkSeries = chart.series.push(new am4plugins_forceDirected.ForceDirectedSeries())
+
+networkSeries.data = [{
+  name: '#전주카페',
+  fixed: true,
+  x: am4core.percent(50),
+  y: am4core.percent(50),    
+  children: [{
+    name: 'Berry', value : 1000,
+    children: [{
+      name: 'Blackberry', value: 1,   //언급량 value가 커질수로 circle도 커진다
+    }, {
+      name: 'Raspberry', value: 1
+    }, {
+      name: 'Blueberry', value: 1
+    }, {
+      name: 'Blueberry', value: 1
+    }, {
+      name: 'Strawberry', value: 1
+    }]
+  }, {
+    name: 'Dried Fruit',  value : 1000,
+    children: [{
+      name: 'Blackberry', value: 1   //언급량 value가 커질수로 circle도 커진다
+    }, {
+      name: 'Raspberry', value: 1
+    }, {
+      name: 'Blueberry', value: 1
+    }, {
+      name: 'Blueberry', value: 1
+    }, {
+      name: 'Strawberry', value: 1
+    }]
+  }, {
+    name: 'Other Fruit', value : 1000,
+    children: [{
+      name: 'Blackberry', value: 1   //언급량 value가 커질수로 circle도 커진다
+    }, {
+      name: 'Raspberry', value: 1
+    }, {
+      name: 'Blueberry', value: 1
+    }, {
+      name: 'Blueberry', value: 1
+    }, {
+      name: 'Strawberry', value: 1
+    }]
+  }, {
+    name: 'Other Fruit', value : 1000,
+    children: [{
+      name: 'Blackberry', value: 1   //언급량 value가 커질수로 circle도 커진다
+    }, {
+      name: 'Raspberry', value: 1
+    }, {
+      name: 'Blueberry', value: 1
+    }, {
+      name: 'Blueberry', value: 1
+    }, {
+      name: 'Strawberry', value: 1
+    }]
+  }, {
+    name: 'Citrus Fruit', value : 1000,
+    children: [{
+      name: 'Blackberry', value: 1   //언급량 value가 커질수로 circle도 커진다
+    }, {
+      name: 'Raspberry', value: 1
+    }, {
+      name: 'Blueberry', value: 1
+    }, {
+      name: 'Blueberry', value: 1
+    }, {
+      name: 'Strawberry', value: 1
+    }]
+  }]
+}];
+
+networkSeries.dataFields.linkWith = "linkWith";
+networkSeries.dataFields.name = "name";
+networkSeries.dataFields.id = "name";
+networkSeries.dataFields.value = "value";
+networkSeries.dataFields.children = "children";
+networkSeries.dataFields.fixed = "fixed";
+
+networkSeries.nodes.template.propertyFields.x = "x";
+networkSeries.nodes.template.propertyFields.y = "y";
+
+networkSeries.nodes.template.tooltipText = "{name}";
+networkSeries.nodes.template.fillOpacity = 1;
+
+networkSeries.nodes.template.label.text = "{name}"
+networkSeries.fontSize = 15;
+networkSeries.maxLevels = 3;
+networkSeries.nodes.template.label.hideOversized = true;
+networkSeries.nodes.template.label.truncate = true;

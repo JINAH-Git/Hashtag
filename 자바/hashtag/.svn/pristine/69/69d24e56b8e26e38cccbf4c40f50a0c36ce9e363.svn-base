@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html style="scroll-behavior:smooth;">
+	<head>
+		<meta charset="EUC-KR">
+		<title>HashTags</title>
+		<!--  head 로고 -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+				<!-- 인기 포스트 블로그 글들 -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300&display=swap" rel="stylesheet">
+		<!-- 인기 포스트 블로그 제목들 -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
+		<!-- 포스트 수 카운드 글씨 -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@600&display=swap" rel="stylesheet">
+		<!-- 메인 글 -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+		<!-- 메인 설명 밑에 글 -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@200&display=swap" rel="stylesheet">
+	</head>
+	<style>
+		/* 실시간 인기 해시태그 리스트들 */
+		.phs_list
+		{
+			width:300px;
+			height:350px;
+			position: absolute;
+			top:1200px;
+			left:300px;
+			border-radius: 8px;
+			background-color:#FFFFFF;
+			border-right-color: red;
+		}
+		/* 실시간 인기 해시태그 제목 */
+		.phs
+		{
+			width:300px;
+			height:250px;
+			position: relative;
+			font-size: 20px;
+			padding: 10px 64.5px;
+			border-radius: 8px;
+			vertical-align: middle;
+			bottom: 20px;
+			background-color:#FFFFFF;
+		}
+		/* 실시간 인기 해시태그 번호와 이름들 */
+		.phs_list1
+		{
+			background-color:#F2F4FD;
+			border-radius:50px;
+			position:relative;
+		   	padding: 10px 18px;
+		   	vertical-align: middle;
+		   	color: #5863CB;
+		   	top: 20px;
+		   	left:30px;
+		   	font-size:18px;
+		}
+		.phs_name1
+		{
+			width:200px;
+			height:30px;
+			background-color:#F2F4FD;
+			border-radius:100px;
+			position:relative;
+			top: 20px;
+		    left:40px;
+		   	padding: 15px 55px;
+		   	vertical-align: middle;
+		   	color: #5863CB;
+		   	text-align: center;
+		   	font-size:18px;
+		}
+		.phs_list2
+		{
+			background-color:#F2F4FD;
+			border-radius:50px;
+			position:relative;
+		   	padding: 10px 18px;
+		   	vertical-align: middle;
+		   	color: #5863CB;
+		   	top: 55px;
+		   	left:30px;
+   			font-size:18px;
+		}
+		.phs_name2
+		{
+			width:200px;
+			height:30px;
+			background-color:#F2F4FD;
+			border-radius:100px;
+			position:relative;
+			top: 55px;
+		    left:40px;
+		   	padding: 15px 45px;
+		   	vertical-align: middle;
+		   	color: #5863CB;
+		   	text-align: center;
+		   	font-size:18px;
+		}
+		.phs_list3
+		{
+			background-color:#F2F4FD;
+			border-radius:80px;
+			position:relative;
+		   	padding: 10px 18px;
+		   	vertical-align: middle;
+		   	color: #5863CB;
+		   	top: 90px;
+		   	left:30px;
+		   	font-size:18px;
+		}
+		.phs_name3
+		{
+			width:200px;
+			height:30px;
+			background-color:#F2F4FD;
+			border-radius:100px;
+			position:relative;
+			top: 90px;
+		    left:40px;
+		   	padding: 15px 45px;
+		   	vertical-align: middle;
+		   	color: #5863CB;
+		   	text-align: center;
+		   	font-size:18px;
+		}
+		.phs_list4
+		{
+			background-color:#F2F4FD;
+			border-radius:80px;
+			position:relative;
+		   	padding: 10px 18px;
+		   	vertical-align: middle;
+		   	color: #5863CB;
+		   	top: 125px;
+		   	left:30px;
+		   	font-size:18px;
+		}
+		.phs_name4
+		{
+			width:200px;
+			height:30px;
+			background-color:#F2F4FD;
+			border-radius:100px;
+			position:relative;
+			top: 125px;
+		    left:40px;
+		   	padding: 15px 62px;
+		   	vertical-align: middle;
+		   	color: #5863CB;
+		   	font-size:18px;
+		}
+		.phs_list5
+		{
+			background-color:#F2F4FD;
+			border-radius:80px;
+			position:relative;
+		   	padding: 10px 18px;
+		   	vertical-align: middle;
+		   	color: #5863CB;
+		   	top: 160px;
+		   	left:30px;
+		   	font-size:18px;
+		}
+		.phs_name5
+		{
+			width:200px;
+			height:30px;
+			background-color:#F2F4FD;
+			border-radius:100px;
+			position:relative;
+			top: 160px;
+		    left:40px;
+		   	padding: 15px 62px;
+		   	vertical-align: middle;
+		   	color: #5863CB;
+		   	font-size:18px;
+		}
+		.ranklink
+		{
+			text-decoration-line:none;
+			color:#5863CB
+		}
+	</style>
+	<body style="margin:0px">
+		<div class="head" style="margin:0px;width:100%;height:81px;">
+			<p style="text-align:center;font-size:50px;margin:0px;"><b><a href="index.html" style="text-decoration-line:none;color:black;font-family: 'Roboto Slab', serif;">Cafe HashTags</a></b></p>
+		</div>	
+		<div class="main" style="margin:0px;width:100%;min-height:600px;background:black;">
+			<div class="sub1" id="sub1" style="width:100%; min-height:844px">
+				<img src="/hashtag/img/해시태그.png" style="width:100%;height:844px"></img>
+				<div style="background:linear-gradient(to right,black,transparent);position:absolute;top:81px;width:100%;height:844px;"></div>
+				<p style="position:absolute;top:350px;left:100px; text-align:left;font-size:45px;margin:0px;color:white;font-family: 'Noto Sans KR', sans-serif;">
+					<b>해시태그 분석으로 <br>카페 탐방은 HashTags 에서 한눈에!</b>
+				</p>
+				<p style="position:absolute;top:80%; left:32%; text-align:middle;font-size:30px;margin:0px;color:white;font-family: 'Noto Sans KR', sans-serif;">
+					아래로 스크롤 해서 HashTags와 함께 시작해보세요
+				</p>
+				<button style="position:absolute;top:90%;left:45%;text-align:middle;width:200px;height:50px;border-radius:20px;font-size:30px;background-color:#F2F4FD;border:none;">
+				<a href="#sub2" style="text-decoration-line: none;color:black">▽</a>
+				</button>
+			</div>
+			<div class="sub2" id="sub2" style="width:100%;min-height:925px;background:#F2F4FD;">
+				<!-- 실시간 인기 해시태그 전체 틀 시작 -->
+					<div class="phs_list">
+						<span class="phs" style="font-family: 'IBM Plex Sans KR', sans-serif;"><b>실시간 인기 해시태그</b></span>
+						<span class="phs_list1" style="font-family: 'IBM Plex Sans KR', sans-serif;"><b>1</b></span>
+						<span class="phs_name1" style="font-family: 'IBM Plex Sans KR', sans-serif;"><b>#오리온</b></span>
+						<br>
+						<span class="phs_list2" style="font-family: 'IBM Plex Sans KR', sans-serif;"><b>2</b></span>
+						<span class="phs_name2" style="font-family: 'IBM Plex Sans KR', sans-serif;"><b>#한옥카페</b></span>
+						<br>
+						<span class="phs_list3" style="font-family: 'IBM Plex Sans KR', sans-serif;"><b>3</b></span>
+						<span class="phs_name3" style="font-family: 'IBM Plex Sans KR', sans-serif;"><b>#대형카페</b></span>
+						<br>
+						<span class="phs_list4" style="font-family: 'IBM Plex Sans KR', sans-serif;"><b>4</b></span>
+						<span class="phs_name4" style="font-family: 'IBM Plex Sans KR', sans-serif;"><b>#감성</b></span>
+						<br>
+						<span class="phs_list5" style="font-family: 'IBM Plex Sans KR', sans-serif;"><b>5</b></span>
+						<span class="phs_name5" style="font-family: 'IBM Plex Sans KR', sans-serif;"><b>#휴가</b></span>
+					</div>
+				<!-- 실시간 인기 해시태그 전체 틀 끝 -->
+				<!-- 지도  -->
+				<p style="position:relative;top:180px;left:870px; font-size:35px;margin:0px;font-family: 'IBM Plex Sans KR', sans-serif;">
+					<b>전라북도 내 카페</b>
+				</p>
+				<img src="/hashtag/img/indexmap.png" style="position:relative;top:230px;left:1000px;width:500px"></img>
+				<img src="/hashtag/img/pin.png" style="position:relative;left:740px;bottom:60px;width:50px"></img> <!-- 익산 -->
+				<img src="/hashtag/img/pin.png" style="position:relative;left:300px;bottom:18px;width:50px"></img> <!-- 군산 -->
+				<img src="/hashtag/img/pin.png" style="position:relative;left:460px;bottom:20px;width:50px"></img> <!-- 완주 -->
+				<a href="main1.html"><img src="/hashtag/img/pin.png" style="position:relative;left:358px;top:65px;width:50px"></img></a> <!-- 전주 -->
+			</div>
+		</div>
+		<!-- tail 시작 -->
+		<div class="tail" style="width:100%;height:150px;">
+			<p style="text-align:center;position:relative;font-size:25px;right:170px;">Company Info</p>
+			<p style="text-align:center;position:relative;font-size:15px;left:130px;">HashTags Co.Ltd | 전북 전주시 덕진구 백제대로 572 5층 | T.063)276-2380 | F.063)276-2384</p>
+		</div>	
+		<!-- tail 끝 -->
+	</body>
+</html>

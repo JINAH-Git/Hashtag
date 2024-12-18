@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html style="scroll-behavior:smooth;">
+	<head>
+		<meta charset="EUC-KR">
+		<title>HashTags</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap" rel="stylesheet">
+	</head>
+	<style>
+		*
+		{
+			font-family: 'Noto Sans KR', sans-serif;
+		}
+		.numtags
+		{
+			width:10px;
+			background-color:#F2F4FD;
+			left:50px;
+			border-radius:100px;
+			padding:20px 30px;
+			vertical-align: middle;
+			color: #5863CB;
+		}
+		.ranktags
+		{
+			 width:150px;
+			 background-color:#F2F4FD;
+			 left:130px;
+			 border-radius:100px;
+			 padding: 20px 30px;
+			 vertical-align: middle;
+			 color: #5863CB;
+			 text-align:center;
+		}
+		.ranklink
+		{
+			text-decoration-line:none;
+			color:#5863CB
+		}
+	</style>
+	<body style="margin:0px">
+		<div class="head" style="margin:0px;width:1903px;height:81px;">
+			<p style="text-align:center;font-size:60px;margin:0px;"><b><a href="index.html" style="text-decoration-line:none;color:black">Cafe HashTags</a></b></p>
+		</div>	
+		<div class="main" style="margin:0px;width:1903px;min-height:600px;background:black;">
+			<div class="sub1" id="sub1" style="width:1900px; min-height:844px">
+				<img src="/hashtag/img/indexcafe.jpg" style="width:1903px;height:844px"></img>
+				<div style="background:linear-gradient(to right,black,transparent);position:absolute;top:81px;width:1200px;height:844px;"></div>
+				<p style="position:absolute;top:350px;left:100px; text-align:left;font-size:60px;margin:0px;color:white">
+					<b>해시태그 분석으로 <br>카페 탐방은 HashTags 에서 한눈에!</b>
+				</p>
+				<p style="position:absolute;top:80%; left:32%; text-align:middle;font-size:30px;margin:0px;color:white">
+					아래로 스크롤 해서 HashTags와 함께 시작해보세요
+				</p>
+				<button style="position:absolute;top:90%;left:45%;text-align:middle;width:200px;height:50px;border-radius:20px;font-size:30px;background-color:#F2F4FD;border:none;">
+				<a href="#sub2" style="text-decoration-line: none;color:black">▽</a>
+				</button>
+			</div>
+			<div class="sub2" id="sub2" style="width:1903px;min-height:925px;background:#F2F4FD;">
+				<!-- 실시간 인기 해시태그  -->
+				<div style="width:380px;height:510px;background:#5863CB;position:relative;top:200px;left:350px;border-radius: 10px;">
+					<div style="position:absolute;background-color:white;width:380px;height:510px;border-collapse:collapse;border-radius:10px;margin: -5px 0 0 -5px;">
+						<div><h1 style="text-align:center;top:30px;">실시간 인기 해시태그</h1></div>
+						<span class="numtags" style="position:absolute;top:120px;">1</span>
+						<span class="ranktags" style="position:absolute;top:120px;"><a href="main2.html" class="ranklink">#오리온</a></span>
+						
+						<span class="numtags" style="position:absolute;top:195px;">2</span>
+						<span class="ranktags" style="position:absolute;top:195px;"><a href="main2.html" class="ranklink">#전주신상카페</a></span>
+						
+						<span class="numtags" style="position:absolute;top:270px;">3</span>
+						<span class="ranktags" style="position:absolute;;top:270px;"><a href="main2.html" class="ranklink">#빈타이</a></span>
+						
+						<span class="numtags" style="position:absolute;top:345px;">4</span>
+						<span class="ranktags" style="position:absolute;top:345px;"><a href="main2.html" class="ranklink">#라떼</a></span>
+						
+						<span class="numtags" style="position:absolute;top:420px;">5</span>
+						<span class="ranktags" style="position:absolute;top:420px;"><a href="main2.html" class="ranklink">#원두</a></span>
+					</div>
+				</div>
+				<!-- 지도  -->
+				<p style="position:absolute;top:1100px;left:980px; text-align:left;font-size:60px;margin:0px;">
+					<b>전라북도 내 카페</b>
+				</p>
+				<img src="/hashtag/img/indexmap.png" style="position:absolute;top:1250px;right:450px;width:500px"></img>
+				<img src="/hashtag/img/pin.png" style="position:absolute;top:1265px;right:660px;width:50px"></img> <!-- 익산 -->
+				<img src="/hashtag/img/pin.png" style="position:absolute;top:1315px;right:770px;width:50px"></img> <!-- 군산 -->
+				<img src="/hashtag/img/pin.png" style="position:absolute;top:1310px;right:550px;width:50px"></img> <!-- 완주 -->
+				<a href="main1.html"><img src="/hashtag/img/pin.png" style="position:absolute;top:1400px;right:600px;width:50px"></img></a> <!-- 전주 -->
+			</div>
+		</div>
+		<div class="tail" style="margin:0px;width:1903px;height:150px;">
+			<p style="margin:15px;text-align:center;position:relative;font-size:25px;">Company Info</p>
+			<p style="text-align:center;position:relative;font-size:15px;">HashTags Co.Ltd<br>전북 전주시 덕진구 백제대로 572 5층<br>T.063)276-2380<br>F.063)276-2384</p>
+		</div>	
+	</body>
+</html>

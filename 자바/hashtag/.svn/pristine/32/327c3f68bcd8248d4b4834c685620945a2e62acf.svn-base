@@ -1,0 +1,39 @@
+//크롤링한 데이터의 자료를 담기위한 VO(Value Object)클래스
+package hashtag.vo;
+
+public class DataVO 
+{
+	String blogaddress; //블로그 주소
+	String refine;	 	//정제차수
+	String title;		//제목
+	String wdate;		//작성일
+	String note;		//내용
+	String cdhashtag;	//해시태그 모음
+	String agreecount;	//공감수
+	String cdregion;	//지역(전주일 경우 #전주카페로 검색하였다.)
+	String cdadjective;	//형용사
+	
+	
+	public String getBlogaddress() { return blogaddress; }
+	public String getRefine() 	   { return refine;		 }
+	public String getTitle() 	   { return title;		 }
+	public String getWdate() 	   { return wdate;		 }
+	public String getNote() 	   { return note;		 }
+	public String getCdhashtag()   { return cdhashtag;   }
+	public String getAgreecount()  { return agreecount;  }
+	public String getCdregion()    { return cdregion;    }
+	public String getCdadjective() { return cdadjective; }
+	
+	
+	public void setBlogaddress(String blogaddress) { this.blogaddress = blogaddress; }
+	public void setRefine(String refine) 		   { this.refine 	  = refine;		 }
+	public void setTitle(String title) 			   { this.title 	  = title;		 }
+	public void setWdate(String wdate) 			   { this.wdate 	  = wdate;		 }
+	public void setNote(String note) 			   { this.note 	      = note;		 }
+	public void setCdhashtag(String cdhashtag) 	   { this.cdhashtag   = cdhashtag;   }
+	public void setAgreecount(String agreecount)   { this.agreecount  = agreecount;	 }
+	public void setCdregion(String cdregion) 	   { this.cdregion 	  = cdregion;	 }
+	public void setCdadjective(String cdadjective) { this.cdadjective = cdadjective; }
+	
+	
+}

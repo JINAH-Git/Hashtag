@@ -1,0 +1,17 @@
+//해시태그트리 매핑 데이터의 자료를 담기위한 VO(Value Object)클래스
+package hashtag.vo;
+
+public class TagstreemappingVO 
+{
+	String top12tags;   //상위12개 키워드
+	String blogadress;  //블로그주소
+	
+	public String getTop12tags()  				  { return top12tags;             }
+	public String getBlogadress() 				  { return blogadress;            }
+	
+	public void setTop12tags(String top12tags)    { this.top12tags = top12tags;   }
+	public void setBlogadress(String blogadress)  { this.blogadress = blogadress; }
+	
+	
+	
+}

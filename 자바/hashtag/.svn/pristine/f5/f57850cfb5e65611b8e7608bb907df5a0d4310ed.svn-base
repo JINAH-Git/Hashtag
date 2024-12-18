@@ -1,0 +1,548 @@
+@charset "EUC-KR";
+
+	.wrap_body
+		{
+			width:100%;
+			height:3000px;
+			background-color:#EDEDED;
+			position:relative;
+			border-top: 1.5px solid #E4E4E7;
+		}
+		.bodybar1
+		{
+			width:330px;
+			height:1300px;
+			background-color:#FFFFFF;
+			position:absolute;
+			left: 160px;
+		}
+		.bar1
+		{
+			width:280px;
+			height:200px;
+			top:50px;
+			margin-left:20px;
+			position: relative;
+			margin-bottom: 85px;
+		}
+		.blog
+		{
+			position:relative;
+			left:235px;
+			top:26px;
+		}
+		.hstitle
+		{
+			width:280px;
+			height:80px;
+			background-color:#F2F4FD;
+			border-radius:100px;
+			top: 40px;
+		    position:relative;
+		    left:10px;
+		   	padding: 15px 94px;
+		   	vertical-align: middle;
+		   	bottom: 35px;
+		   	color: #5863CB;
+		   	font-size: 20px;
+		}
+		.hspost
+		{
+			width:150px;
+			height:50px;
+			position:absolute;
+			top: 126px;
+			right:120px;
+			padding: 10px 10px;
+			text-align: center;
+			font-size:18px;
+			
+		}
+		.hspostcount
+		{
+			width:150px;
+			height:50px;
+			position:absolute;
+			top: 132px;
+			left:190px;
+			font-size:20px;
+		}
+		.bar2
+		{
+			width:280px;
+			height:350px;
+			border-radius: 8px;
+			position: relative;
+			margin-left:20px;
+			margin-bottom: 35px;
+		}
+		.phs
+		{
+			width:250px;
+			height:250px;
+			position: absolute;
+			left:60px;
+			font-size: 20px;
+		}
+		/* 실시간 인기 해시태그 리스트들 */
+		.phs_list
+		{
+			width:280px;
+			height:330px;
+			position: absolute;
+			top:35px;
+			border-radius: 8px;
+			background-color:#FFFFFF;
+		}
+		/* 실시간 인기 해시태그 번호와 이름들 */
+		.phs_list1
+		{
+			background-color:#F2F4FD;
+			border-radius:50px;
+			position:relative;
+		   	padding: 10px 18px;
+		   	vertical-align: middle;
+		   	color: #5863CB;
+		   	top: 20px;
+		   	left:30px;
+		   	font-size:18px;
+		}
+		.phs_name1
+		{
+			width:200px;
+			height:30px;
+			background-color:#F2F4FD;
+			border-radius:100px;
+			position:relative;
+			top: 20px;
+		    left:40px;
+		   	padding: 15px 55px;
+		   	vertical-align: middle;
+		   	color: #5863CB;
+		   	text-align: center;
+		   	font-size:18px;
+		}
+		.phs_list2
+		{
+			background-color:#F2F4FD;
+			border-radius:50px;
+			position:relative;
+		   	padding: 10px 18px;
+		   	vertical-align: middle;
+		   	color: #5863CB;
+		   	top: 55px;
+		   	left:30px;
+   			font-size:18px;
+		}
+		.phs_name2
+		{
+			width:200px;
+			height:30px;
+			background-color:#F2F4FD;
+			border-radius:100px;
+			position:relative;
+			top: 55px;
+		    left:40px;
+		   	padding: 15px 45px;
+		   	vertical-align: middle;
+		   	color: #5863CB;
+		   	text-align: center;
+		   	font-size:18px;
+		}
+		.phs_list3
+		{
+			background-color:#F2F4FD;
+			border-radius:80px;
+			position:relative;
+		   	padding: 10px 18px;
+		   	vertical-align: middle;
+		   	color: #5863CB;
+		   	top: 90px;
+		   	left:30px;
+		   	font-size:18px;
+		}
+		.phs_name3
+		{
+			width:200px;
+			height:30px;
+			background-color:#F2F4FD;
+			border-radius:100px;
+			position:relative;
+			top: 90px;
+		    left:40px;
+		   	padding: 15px 45px;
+		   	vertical-align: middle;
+		   	color: #5863CB;
+		   	text-align: center;
+		   	font-size:18px;
+		}
+		.phs_list4
+		{
+			background-color:#F2F4FD;
+			border-radius:80px;
+			position:relative;
+		   	padding: 10px 18px;
+		   	vertical-align: middle;
+		   	color: #5863CB;
+		   	top: 125px;
+		   	left:30px;
+		   	font-size:18px;
+		}
+		.phs_name4
+		{
+			width:200px;
+			height:30px;
+			background-color:#F2F4FD;
+			border-radius:100px;
+			position:relative;
+			top: 125px;
+		    left:40px;
+		   	padding: 15px 62px;
+		   	vertical-align: middle;
+		   	color: #5863CB;
+		   	font-size:18px;
+		}
+		.phs_list5
+		{
+			background-color:#F2F4FD;
+			border-radius:80px;
+			position:relative;
+		   	padding: 10px 18px;
+		   	vertical-align: middle;
+		   	color: #5863CB;
+		   	top: 160px;
+		   	left:30px;
+		   	font-size:18px;
+		}
+		.phs_name5
+		{
+			width:200px;
+			height:30px;
+			background-color:#F2F4FD;
+			border-radius:100px;
+			position:relative;
+			top: 160px;
+		    left:40px;
+		   	padding: 15px 62px;
+		   	vertical-align: middle;
+		   	color: #5863CB;
+		   	font-size:18px;
+		}
+		/* 다른 지역 카페 기둥바 */
+		.bar3
+		{
+			width:280px;
+			height:250px;
+			border-radius: 8px;
+			position: relative;
+			margin-left:20px;
+		}
+		.cafename
+		{
+			width:250px;
+			height:250px;
+			position: absolute;
+			left:80px;
+			font-size: 20px;
+		}
+		/* 다른지역카페 리스트들 */
+		.cafename_list
+		{
+			width:300px;
+			height:330px;
+			border-radius: 8px;
+			position: absolute;
+			top:38px;
+		}
+		/*다른 지역 카페 이름들 */
+		.cafe1
+		{
+			background-color:#F2F4FD;
+			border-radius:100px;
+			position:relative;
+		    left:23px;
+		    top:20px;
+		   	padding: 15px 80px;
+		   	vertical-align: middle;
+		   	color: #5863CB;
+		   	font-size:18px;
+		}
+		.cafe2
+		{
+			background-color:#F2F4FD;
+			border-radius:100px;
+			position:relative;
+			top: 60px;
+		    left:23px;
+		   	padding: 15px 80px;
+		   	vertical-align: middle;
+		   	color: #5863CB;
+		   	font-size:18px;
+		}
+		.cafe3
+		{
+			background-color:#F2F4FD;
+			border-radius:100px;
+			position:relative;
+			top: 100px;
+		    left:23px;
+		   	padding: 15px 80px;
+		   	vertical-align: middle;
+		   	color: #5863CB;
+		   	font-size:18px;
+		}
+		.tag
+		{
+			width:1050px;
+			height:2200px;
+		    position:absolute;
+		    left:600px;
+		    top:0px;
+		}
+		.tagname
+		{
+			position:absolute;
+			top:35px;
+			left:20px;
+			font-size:20px;
+		}
+		.tag_body
+		{
+			width:1000px;
+			height:304px;
+			border-radius: 8px;
+			position:absolute;
+			left:15px;
+			top:75px;
+			background-color:#FFFFFF;
+		}
+		.tag_name1, .tag_name2, .tag_name3 
+		{
+			width:120px;
+			height:30px;
+			background-color:#F2F4FD;
+			border-radius:800px;
+		    position:relative;
+		   	padding: 15px 23px 8px;
+		   	vertical-align: middle;
+		   	display:inline-table;
+		   	text-align: center;
+		   	margin:20px;
+		   	left:10px;
+		   	top:3px;
+		   	color:#212880;
+		}
+		.tag_name4, .tag_name5, .tag_name6
+		{
+			width:120px;
+			height:30px;
+			background-color:#F2F4FD;
+			border-radius:800px;
+		    position:relative;
+		   	padding: 15px 23px 8px;
+		   	vertical-align: middle;
+		   	display:inline-table;
+		   	text-align: center;
+		   	left:270px;
+		   	bottom:275px;
+		   	margin:20px;
+		   	color:#212880;
+		} 
+		.tag_name7, .tag_name8, .tag_name9
+		{
+			width:120px;
+			height:30px;
+			background-color:#F2F4FD;
+			border-radius:800px;
+		    position:relative;
+		   	padding: 15px 23px 8px;
+		   	vertical-align: middle;
+		   	display:inline-table;
+		   	text-align: center;
+		   	left:540px;
+		   	bottom:555px;
+		   	margin:20px;
+		   	color:#212880;
+		}
+		.tag_name10, .tag_name11, .tag_name12
+		{
+			width:120px;
+			height:30px;
+			background-color:#F2F4FD;
+			border-radius:800px;
+		    position:relative;
+		   	padding: 15px 23px 8px;
+		   	vertical-align: middle;
+		   	display:inline-table;
+		   	text-align: center;
+		   	left:790px;
+		   	bottom:830px;
+		   	margin:20px;
+		   	color:#212880;
+		}
+		.graph_body
+		{
+			width:1000px;
+			height:400px;
+		    position:absolute;
+		    left:15px;
+		    top:460px;
+		}
+		.graphname
+		{
+			position:absolute;
+			top:420px;
+			left:20px;
+			font-size:20px;
+		}
+		.hstreename
+		{
+			position:absolute;
+			top:900px;
+			left:20px;
+			font-size:20px;
+		}
+		.hstree_tree
+		{
+			width:900px;
+			height:500px;
+		    position:absolute;
+		    left:15px;
+		    top:940px;
+		}
+		.ponwordname
+		{
+			position:absolute;
+			top:1480px;
+			left:15px;
+			font-size:20px;
+		}
+		.ponword_name1
+		{
+			position:absolute;
+			top:15px;
+			left:25px;
+		}
+		/* 긍부정 단어 순위 변화 전체 틀(제목 긍부정 단어 순위 변화제외)*/
+		.ponword_body
+		{
+			width:1000px;
+			height:790px;
+		    position:absolute;
+		    left:15px;
+		    top:1525px;
+		    border: 1px solid #E4E4E7;;
+		    border-radius: 8px;
+		    background-color: #FFFFFF;
+		}
+		/* 단어 순위, 단어, 긍부정, 건수 제목 틀 */
+		.ponwordtitle
+		{
+			border:1px solid white;
+			position:relative;
+			top:10px;
+			margin-top:20px;
+		}
+		/* 긍부정 단어들 */
+		.ponword_t1
+		{
+			position:relative;
+			left:195px;
+			font-size:16px;
+			font-family: 'IBM Plex Sans KR', sans-serif;
+			
+		}
+		.ponword_t2
+		{
+			position:relative;
+			left:370px;
+			font-size:16px;
+			font-family: 'IBM Plex Sans KR', sans-serif;
+		}
+		.ponword_t3
+		{
+			position:relative;
+			left:555px;
+			font-size:16px;
+			font-family: 'IBM Plex Sans KR', sans-serif;
+		}
+		.ponword_t4
+		{
+			position:relative;
+			left:700px;
+			font-size:16px;
+			font-family: 'IBM Plex Sans KR', sans-serif;
+		}
+		/* 긍 부정 단어 순위 변호 내용 틀(순위, 단어, 긍부정, 건수 제외) */
+		.ponwordnote
+		{
+			width:850px;
+			height:675px;
+			position:relative;
+			top:30px;
+			border-radius: 8px;
+			margin: 0 auto;
+		}
+		/* 긍 부정 단어 순위 틀 */
+		.ponwordfrm1, .ponwordfrm2, .ponwordfrm3, .ponwordfrm4, .ponwordfrm5, .ponwordfrm6, .ponwordfrm7, .ponwordfrm8, .ponwordfrm9, .ponwordfrm10
+		{
+			width:813px;
+			height:30px;
+			border:1px solid #E4E4E7;
+		    position: relative;
+    		padding: 12px 16px;
+    		border-radius: 8px;
+    		font-family: 'IBM Plex Sans KR', sans-serif;
+    		font-size:17px;
+    		margin: 0 auto;
+    		margin-bottom: 12px;
+		}
+		/* 첫 번째 순위, 단어, 긍부정, 건수 */
+		.ponwordfrm1_1, .ponwordfrm2_1, .ponwordfrm3_1, .ponwordfrm4_1, .ponwordfrm5_1, .ponwordfrm6_1, .ponwordfrm7_1, .ponwordfrm8_1, .ponwordfrm9_1, .ponwordfrm10_1
+		{
+			position: relative;
+			left:110px;
+			text-align: center;
+		}
+		.ponwordfrm1_2, .ponwordfrm2_2, .ponwordfrm3_2, .ponwordfrm4_2, .ponwordfrm5_2, .ponwordfrm6_2, .ponwordfrm7_2, .ponwordfrm8_2, .ponwordfrm9_2, .ponwordfrm10_2
+		{
+			position: absolute;
+			left:300px;
+			text-align: center;
+			padding: 10px 30px;
+		}
+		.ponwordfrm1_3, .ponwordfrm2_3, .ponwordfrm3_3, .ponwordfrm4_3, .ponwordfrm5_3, .ponwordfrm6_3, .ponwordfrm7_3, .ponwordfrm8_3, .ponwordfrm9_3, .ponwordfrm10_3
+		{
+			position:  absolute;
+			left:550px;
+			padding: 10px 10px;
+		}
+		.ponwordfrm1_4, .ponwordfrm2_4, .ponwordfrm3_4, .ponwordfrm4_4, .ponwordfrm5_4, .ponwordfrm6_4, .ponwordfrm7_4, .ponwordfrm8_4, .ponwordfrm9_4, .ponwordfrm10_4
+		{
+			position: absolute;
+			left:750px;
+		}
+		.left
+		{
+			position:absolute;
+			top:360px;
+			left:20px;
+		}
+		.right
+		{
+			position:absolute;
+			top:360px;
+			left:950px;
+		}
+		.table1
+		{
+			position:absolute;
+			top:45px;
+			left:22px;
+		}
+		.table2
+		{
+			position:absolute;
+			top:45px;
+			left:500px;
+		}
