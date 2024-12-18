@@ -7,10 +7,10 @@
 ---
 
 📋 프로젝트 개요
-- **프로젝트명**: SNS 기반 인기 해시태그 분석
-- **개발 기간**: 2023년 8월 ~ 9월
-- **개발 인원**: 4명
-- **주요 역할**: 기획, 화면 설계, DB설계, 감성분석 모듈, 형용사 모듈, 해시태그 모듈, 웹 개발
+  **프로젝트명**: SNS 기반 인기 해시태그 분석
+  **개발 기간**: 2023년 8월 ~ 9월
+  **개발 인원**: 4명
+  **주요 역할**: 기획, 화면 설계, DB설계, 감성분석 모듈, 형용사 모듈, 해시태그 모듈, 웹 개발
 
 ---
 
@@ -33,10 +33,10 @@
 ---
 
 🛠️ 기술 스택
-- **Technique**: HTML 5, JAVA 1.8, CSS 3, JavaScript, JQuery 3.7.0, JSP,  Ajax, Python 3.8.8
-- **tool**: Tomcat 1.5, Eclipse 2019-12(4.14.0), StarUML 5.0.2, ERWIN 7.3.2, Spyder 4.2.5
-- **Database**: MySQL v8.2
-- **Library**: Pandas, re, csv, Okt, selenium, bs4, webdriver_manager, webdriver_manager, 
+**Technique**: HTML 5, JAVA 1.8, CSS 3, JavaScript, JQuery 3.7.0, JSP,  Ajax, Python 3.8.8
+**Tool**     : Tomcat 1.5, Eclipse 2019-12(4.14.0), StarUML 5.0.2, ERWIN 7.3.2, Spyder 4.2.5
+**Database** : MySQL v8.2
+**Library**  : Pandas, re, csv, Okt, selenium, bs4, webdriver_manager, webdriver_manager, 
                collections, train_test_split, dump, TfidfVectorizer, MultinomialNB, 
                cross_val_score, load, accuracy_score
 
